@@ -14,15 +14,26 @@ desktop-color: "#000000"
 terminal-box: "menu_bkg_*.png"
 terminal-font: "Fixed Regular 13"
 
-# Show Archlinux logo
-
+# Show avatar
 + image {
-		id = "__archlogo__"
-		left = 40%
+		id = "__avatar__"
+		left = 25%
 		width = 10%
 		top = 0%
 		height = 12%
 		file = "avatar_halo.png"
+}
+
+# Show author
++ hbox {
+		left = 45%
+		top = 35
+		+ label { text = "by Markus Færevaag" font = "Sans 14" color = "#1692d0" align = "left" }
+}
++ hbox {
+		left = 45%
+		top = 55
+		+ label { text = "github.com/mfaerevaag/multibootusb" font = "Sans 14" color = "#1692d0" align = "left" }
 }
 
 # Show the boot menu
@@ -68,10 +79,10 @@ terminal-font: "Fixed Regular 13"
 + hbox {
 		top = 100%-35
 		left = 20%
-		+ label {text = "Enter: " font = "Sans 12" color = "#bbbbbb" align = "left"}
-		+ label {text = "Boot Selection     " font = "Sans 12" color = "#1692d0" align = "left"}
-		+ label {text = "E: " font = "Sans 12" color = "#bbbbbb" align = "left"}
-		+ label {text = "Edit Selection     " font = "Sans 12" color = "#1692d0" align = "left"}
-		+ label {text = "C: " font = "Sans 12" color = "#bbbbbb" align = "left"}
-		+ label {text = "GRUB Commandline" font = "Sans 12" color = "#1692d0" align = "left"}
+		+ label { text = "Enter: " font = "Sans 12" color = "#bbbbbb" align = "left" }
+		+ label { text = "Boot Selection     " font = "Sans 12" color = "#1692d0" align = "left" }
+		+ label { text = "E: " font = "Sans 12" color = "#bbbbbb" align = "left" }
+		+ label { text = "Edit Selection     " font = "Sans 12" color = "#1692d0" align = "left" }
+		+ label { text = "C: " font = "Sans 12" color = "#bbbbbb" align = "left" }
+		+ label { text = "GRUB Commandline" font = "Sans 12" color = "#1692d0" align = "left" }
 }
