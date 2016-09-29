@@ -104,3 +104,7 @@ grub-install: error: will not proceed with blocklists.
  1. Copy ISOs to `[/mnt/data]/boot/iso/`
  2. Update ISO file names in `grub.d/` configs
  3. Copy over files (`$ ./copy_files.sh /mnt/data/boot/grub/`)
+
+## 7. World Domination
+
+![World Domination](https://i.kinja-img.com/gawker-media/image/upload/idwp0z2wdimdtvegz0ao.png)
