@@ -1,9 +1,11 @@
 #!/usr/bin/sh
 
 target=${1%/}
+
 files="grub.cfg
-grub.d
-multiboot.6U4YzT
+multiboot.6U4YzT"
+
+dirs="grub.d
 themes"
 
 # check arg
@@ -23,7 +25,13 @@ echo "copying from $PWD to $target..."
 # copy files
 for file in $files; do
     echo -e "\t$PWD/$file -> $target/$file"
-    yes | cp -rf $PWD/$file $target/$file
+    yes | cp -f $PWD/$file $target/$file
+done
+
+# copy dirs
+for dir in $dirs; do
+    echo -e "\t$PWD/$dir -> $target/"
+    yes | cp -rf $PWD/$dir $target/
 done
 
 echo "done"
